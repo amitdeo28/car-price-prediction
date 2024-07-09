@@ -16,6 +16,7 @@ def predict():
         present_price = float(request.form.get('Present_Price'))
         kms_driven = int(request.form.get('Kms_Driven'))
         
+        
         # Convert categorical values to numeric
         fuel_type = request.form.get('Fuel_Type')
         fuel_type_dict = {'Petrol': 0, 'Diesel': 1, 'CNG': 2}
